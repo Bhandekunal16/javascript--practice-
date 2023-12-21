@@ -1,13 +1,11 @@
-class Person {
-  constructor(name, age) {
-    this.name = name;
-  }
+class PersonService {
+  constructor() {}
 
-  greet(age) {
-    console.log(
-      `Hello, my name is ${this.name} and I am ${age} years old.`
-    );
+  array = [];
+  greet(name, age) {
+    this.array.push({ name: name, age: age });
+    return this.array;
   }
 }
 
-module.exports = Person;
+module.exports = PersonService;
