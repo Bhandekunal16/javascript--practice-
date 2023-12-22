@@ -45,6 +45,8 @@ class AccountService {
     console.log(this.array);
     return this.array;
   }
+
 }
 
 module.exports = AccountService;
+
