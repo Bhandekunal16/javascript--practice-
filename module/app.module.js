@@ -1,3 +1,6 @@
 const service = require("./user.module");
-const app = service;
-console.log(app);
+const App = service;
+console.log(App);
+
+module.exports = App;
+

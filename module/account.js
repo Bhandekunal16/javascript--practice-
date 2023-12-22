@@ -24,7 +24,6 @@ class AccountService {
     this.accountNumber = generateUUID();
     this.name = person.greet("John Doe", 22);
   }
-
   array = [];
 
   async createAccount() {
