@@ -52,7 +52,7 @@ app.post("/sort/string", async (req, res) => {
 
 app.listen(port, () => {
   console.log(
-    color.green + `Server at running on http://localhost:` + port
+    color.green + `Server start running on http://localhost:` + port
   );
   logger.new()
   console.log(color.green + `Node app is created successfully.`)
