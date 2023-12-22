@@ -14,3 +14,4 @@ newArray = [
 ];
 newArray.sort((a, b) => b.date - a.date);
 console.log(newArray);
+

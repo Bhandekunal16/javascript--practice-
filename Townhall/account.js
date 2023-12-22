@@ -35,6 +35,16 @@ class AccountService {
     console.log(this.array);
     return this.array;
   }
+
+  async get() {
+    await this.array.push({
+      accountNo: this.accountNumber,
+      name: this.name[0].name,
+      age: this.name[0].age,
+    });
+    console.log(this.array);
+    return this.array;
+  }
 }
 
 module.exports = AccountService;
