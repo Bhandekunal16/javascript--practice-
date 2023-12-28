@@ -11,13 +11,19 @@ class Logger {
 
   new() {
     const services = ["AccountService", "OtpCreater", "Uuid", "SortService"];
-    services.forEach(service => {
-      console.log(`[Node] ${this.time} ${color.yellow} [Service] ${color.green} ${service}`);
+    services.forEach((service) => {
+      console.log(
+        `[Node] ${this.time} ${color.yellow} [Service] ${color.green} ${service}`
+      );
     });
   }
 
-  success(body) {
-    console.log(`[Node] ${body}`)
+  log(body) {
+    console.log(color.green + `[Node] ${body}`);
+  }
+
+  error(body) {
+    console.log(color.red + `[Node] ${body}`);
   }
 }
 
